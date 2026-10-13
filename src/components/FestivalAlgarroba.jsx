@@ -58,40 +58,73 @@ export default function FestivalAlgarroba() {
         {/* Feature Cards Grid: 3 Pillars of Festival */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
           
-          <div className="bg-white rounded-3xl p-6 sm:p-7 shadow-sm hover:shadow-xl transition-all duration-300 border border-[#E8DEC9]">
-            <div className="w-12 h-12 rounded-2xl bg-[#7E1160]/10 flex items-center justify-center text-[#7E1160] mb-5">
-              <Users className="w-6 h-6" />
+          <div className="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-[#E8DEC9] flex flex-col">
+            <div className="h-44 overflow-hidden relative">
+              <img
+                src="/assets/fotos/cuadro_vivo_7.webp"
+                alt="Diosas y Diosos de Galeras"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute top-3 left-3 bg-[#7E1160]/90 text-white text-[10px] font-bold px-2.5 py-1 rounded-full backdrop-blur-sm">
+                Creación Humana
+              </div>
             </div>
-            <h3 className="font-serif-title text-xl font-bold text-[#2A1725] mb-2">
-              Diosas y Diosos Populares
-            </h3>
-            <p className="text-xs sm:text-sm text-[#5B4C56] leading-relaxed">
-              Así se denomina cariñosamente a los ciudadanos de Galeras que entregan su cuerpo a la inmovilidad. Desde niños de 6 años hasta ancianos de 80, todos son creadores y protagonistas de la obra.
-            </p>
+            <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 className="font-serif-title text-xl font-bold text-[#2A1725] mb-2">
+                  Diosas y Diosos Populares
+                </h3>
+                <p className="text-xs sm:text-sm text-[#5B4C56] leading-relaxed">
+                  Así se denomina a los ciudadanos de Galeras que entregan su cuerpo a la inmovilidad. Desde niños de 6 años hasta ancianos de 80, todos son creadores y protagonistas de la obra.
+                </p>
+              </div>
+            </div>
           </div>
 
-          <div className="bg-white rounded-3xl p-6 sm:p-7 shadow-sm hover:shadow-xl transition-all duration-300 border border-[#E8DEC9]">
-            <div className="w-12 h-12 rounded-2xl bg-[#DE7349]/15 flex items-center justify-center text-[#DE7349] mb-5">
-              <Sparkles className="w-6 h-6" />
+          <div className="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-[#E8DEC9] flex flex-col">
+            <div className="h-44 overflow-hidden relative">
+              <img
+                src="/assets/fotos/desfile_algarroba_3.webp"
+                alt="Desfile y Fiesta de la Algarroba"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute top-3 left-3 bg-[#DE7349]/90 text-white text-[10px] font-bold px-2.5 py-1 rounded-full backdrop-blur-sm">
+                Fiesta Ancestral
+              </div>
             </div>
-            <h3 className="font-serif-title text-xl font-bold text-[#2A1725] mb-2">
-              El Fruto del Algarrobo
-            </h3>
-            <p className="text-xs sm:text-sm text-[#5B4C56] leading-relaxed">
-              El árbol de algarroba inspira la festividad y da origen a la tradicional jalea y dulces sabaneros que endulzan las noches festivaleras, símbolo de fertilidad, resistencia y arraigo natural.
-            </p>
+            <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 className="font-serif-title text-xl font-bold text-[#2A1725] mb-2">
+                  El Fruto del Algarrobo
+                </h3>
+                <p className="text-xs sm:text-sm text-[#5B4C56] leading-relaxed">
+                  El árbol sagrado inspira la festividad y da origen a la tradicional jalea y dulces sabaneros que endulzan las noches festivaleras, símbolo de fertilidad, resistencia y arraigo natural.
+                </p>
+              </div>
+            </div>
           </div>
 
-          <div className="bg-white rounded-3xl p-6 sm:p-7 shadow-sm hover:shadow-xl transition-all duration-300 border border-[#E8DEC9]">
-            <div className="w-12 h-12 rounded-2xl bg-[#E5A823]/20 flex items-center justify-center text-[#996B07] mb-5">
-              <MapPin className="w-6 h-6" />
+          <div className="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-[#E8DEC9] flex flex-col">
+            <div className="h-44 overflow-hidden relative">
+              <img
+                src="/assets/fotos/cuadro_vivo_8.webp"
+                alt="La Calle como Escenario en Galeras"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute top-3 left-3 bg-[#E5A823]/90 text-[#321303] text-[10px] font-bold px-2.5 py-1 rounded-full backdrop-blur-sm">
+                Arte en la Calle
+              </div>
             </div>
-            <h3 className="font-serif-title text-xl font-bold text-[#2A1725] mb-2">
-              La Calle como Escenario
-            </h3>
-            <p className="text-xs sm:text-sm text-[#5B4C56] leading-relaxed">
-              Sin palcos cerrados ni taquillas elitistas. Galeras democratiza el arte derribando cualquier frontera entre actor y espectador: el arte florece al pie de la puerta de cada hogar.
-            </p>
+            <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 className="font-serif-title text-xl font-bold text-[#2A1725] mb-2">
+                  La Calle como Escenario
+                </h3>
+                <p className="text-xs sm:text-sm text-[#5B4C56] leading-relaxed">
+                  Sin palcos cerrados ni taquillas elitistas. Galeras democratiza el arte derribando cualquier frontera entre actor y espectador: el arte florece al pie de la puerta de cada hogar.
+                </p>
+              </div>
+            </div>
           </div>
 
         </div>

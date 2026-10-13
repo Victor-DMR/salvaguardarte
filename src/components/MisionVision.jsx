@@ -86,11 +86,22 @@ export default function MisionVision() {
                 </div>
               </div>
 
-              <div className="lg:col-span-4 bg-gradient-to-br from-[#7E1160] to-[#540B40] text-white p-7 sm:p-8 rounded-3xl space-y-4 shadow-lg">
+              <div className="lg:col-span-4 bg-gradient-to-br from-[#7E1160] to-[#540B40] text-white p-6 sm:p-7 rounded-3xl space-y-4 shadow-lg">
+                <div className="rounded-2xl overflow-hidden h-36 relative border border-white/10 shadow-inner">
+                  <img
+                    src="/assets/fotos/taller_comunitario_1.webp"
+                    alt="Talleres comunitarios en Galeras"
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                  <span className="absolute bottom-2 left-3 text-[11px] font-bold text-amber-300">
+                    Trabajo con la Comunidad
+                  </span>
+                </div>
                 <h4 className="font-serif-title text-xl font-bold text-[#E5A823]">
                   Líneas de Acción
                 </h4>
-                <ul className="space-y-3 text-xs sm:text-sm text-[#F7EBE0]">
+                <ul className="space-y-2.5 text-xs sm:text-sm text-[#F7EBE0]">
                   <li className="flex items-start gap-2.5">
                     <CheckCircle2 className="w-4 h-4 text-[#DE7349] flex-shrink-0 mt-0.5" />
                     <span>Investigación y documentación etnográfica.</span>
@@ -138,11 +149,22 @@ export default function MisionVision() {
                 </div>
               </div>
 
-              <div className="lg:col-span-4 bg-gradient-to-br from-[#DE7349] to-[#AC4C24] text-white p-7 sm:p-8 rounded-3xl space-y-4 shadow-lg">
+              <div className="lg:col-span-4 bg-gradient-to-br from-[#DE7349] to-[#AC4C24] text-white p-6 sm:p-7 rounded-3xl space-y-4 shadow-lg">
+                <div className="rounded-2xl overflow-hidden h-36 relative border border-white/10 shadow-inner">
+                  <img
+                    src="/assets/fotos/cuadro_vivo_5.webp"
+                    alt="Proyección de Cuadros Vivos al mundo"
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                  <span className="absolute bottom-2 left-3 text-[11px] font-bold text-amber-200">
+                    Patrimonio de Galeras al Mundo
+                  </span>
+                </div>
                 <h4 className="font-serif-title text-xl font-bold text-[#FFE699]">
                   Impacto Proyectado
                 </h4>
-                <ul className="space-y-3 text-xs sm:text-sm text-[#FFF4E8]">
+                <ul className="space-y-2.5 text-xs sm:text-sm text-[#FFF4E8]">
                   <li className="flex items-start gap-2.5">
                     <CheckCircle2 className="w-4 h-4 text-[#FFE699] flex-shrink-0 mt-0.5" />
                     <span>Liderazgo en salvaguardia patrimonial ante la UNESCO.</span>

@@ -104,8 +104,8 @@ export default function Hero() {
                 {/* Inner Border mimicking caña flecha / canvas */}
                 <div className="relative rounded-xl overflow-hidden bg-[#1A1218]">
                   <img
-                    src="/assets/cuadro_vivo_galeras.jpg"
-                    alt="Cuadro Vivo en Galeras Sucre"
+                    src="/assets/fotos/hero_cuadro_vivo.webp"
+                    alt="Cuadro Vivo en Galeras Sucre - Corporación Soy Salvaguardarte"
                     className={`w-full h-[400px] sm:h-[480px] object-cover transition-all duration-700 ${
                       isFrozen ? 'filter saturate-150 contrast-110 scale-105' : 'hover:scale-102'
                     }`}

@@ -166,7 +166,7 @@ export default function CulturalPlayer() {
             {/* Card 1: Gaita Musicians photo */}
             <div className="relative rounded-3xl overflow-hidden shadow-lg border border-[#E5A823]/30 group">
               <img
-                src="/assets/gaita_flauta_musica.jpg"
+                src="/assets/fotos/musica_gaita_1.webp"
                 alt="Músicos de Gaita en Galeras Sucre"
                 className="w-full h-64 object-cover object-top transition-transform duration-500 group-hover:scale-105"
               />
@@ -188,7 +188,7 @@ export default function CulturalPlayer() {
             {/* Card 2: Festival Dance & Street Theater */}
             <div className="relative rounded-3xl overflow-hidden shadow-lg border border-[#E5A823]/30 group">
               <img
-                src="/assets/teatro_danza_galeras.jpg"
+                src="/assets/fotos/desfile_algarroba_1.webp"
                 alt="Teatro y Danza en Festival de la Algarroba"
                 className="w-full h-64 object-cover object-center transition-transform duration-500 group-hover:scale-105"
               />

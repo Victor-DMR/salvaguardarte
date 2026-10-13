@@ -91,36 +91,66 @@ export default function SocialCommunity() {
                 Historias visuales en tiempo real, reels de los ensayos de inmovilidad, retratos de las diosas y diosos de Galeras, y la magia del Caribe sucreño en tu feed.
               </p>
 
-              {/* Mock Instagram Feed Preview with real photos */}
+              {/* Mock Instagram Feed Preview with real WebP photos */}
               <div className="grid grid-cols-3 gap-2 rounded-2xl overflow-hidden mb-6">
                 <div className="relative h-24 overflow-hidden group/img">
                   <img
-                    src="/assets/cuadro_vivo_galeras.jpg"
+                    src="/assets/fotos/cuadro_vivo_3.webp"
                     alt="Cuadro Vivo post"
                     className="w-full h-full object-cover transition-transform duration-300 group-hover/img:scale-110"
                   />
-                  <div className="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover/img:opacity-100 transition-opacity text-white text-[10px] font-bold">
-                    ❤️ 154
+                  <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover/img:opacity-100 transition-opacity text-white text-[10px] font-bold">
+                    ❤️ 245
                   </div>
                 </div>
                 <div className="relative h-24 overflow-hidden group/img">
                   <img
-                    src="/assets/gaita_flauta_musica.jpg"
-                    alt="Músicos post"
+                    src="/assets/fotos/musica_gaita_2.webp"
+                    alt="Músicos sabaneros post"
                     className="w-full h-full object-cover transition-transform duration-300 group-hover/img:scale-110"
                   />
-                  <div className="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover/img:opacity-100 transition-opacity text-white text-[10px] font-bold">
-                    ❤️ 210
+                  <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover/img:opacity-100 transition-opacity text-white text-[10px] font-bold">
+                    ❤️ 310
                   </div>
                 </div>
                 <div className="relative h-24 overflow-hidden group/img">
                   <img
-                    src="/assets/teatro_danza_galeras.jpg"
+                    src="/assets/fotos/desfile_algarroba_2.webp"
                     alt="Danza post"
                     className="w-full h-full object-cover transition-transform duration-300 group-hover/img:scale-110"
                   />
-                  <div className="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover/img:opacity-100 transition-opacity text-white text-[10px] font-bold">
-                    ❤️ 188
+                  <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover/img:opacity-100 transition-opacity text-white text-[10px] font-bold">
+                    ❤️ 288
+                  </div>
+                </div>
+                <div className="relative h-24 overflow-hidden group/img">
+                  <img
+                    src="/assets/fotos/taller_comunitario_1.webp"
+                    alt="Talleres con la comunidad post"
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover/img:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover/img:opacity-100 transition-opacity text-white text-[10px] font-bold">
+                    ❤️ 195
+                  </div>
+                </div>
+                <div className="relative h-24 overflow-hidden group/img">
+                  <img
+                    src="/assets/fotos/cuadro_vivo_4.webp"
+                    alt="Diosas y diosos post"
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover/img:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover/img:opacity-100 transition-opacity text-white text-[10px] font-bold">
+                    ❤️ 412
+                  </div>
+                </div>
+                <div className="relative h-24 overflow-hidden group/img">
+                  <img
+                    src="/assets/fotos/musica_alborada.webp"
+                    alt="Alborada tradicional post"
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover/img:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover/img:opacity-100 transition-opacity text-white text-[10px] font-bold">
+                    ❤️ 350
                   </div>
                 </div>
               </div>
