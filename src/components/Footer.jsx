@@ -1,6 +1,6 @@
 import React from 'react';
 import { Heart, MapPin, Sparkles, Award, Code2, ExternalLink } from 'lucide-react';
-import { InstagramIcon, FacebookIcon, LinkedinIcon } from './SocialIcons';
+import { InstagramIcon, FacebookIcon, LinkedinIcon, WhatsAppIcon } from './SocialIcons';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -74,21 +74,24 @@ export default function Footer() {
                 <a href="#objetivos" className="hover:text-white transition-colors">7 Objetivos Estratégicos</a>
               </li>
               <li>
+                <a href="#aliados" className="hover:text-white transition-colors">Aliados Estratégicos</a>
+              </li>
+              <li>
                 <a href="#comunidad" className="hover:text-white transition-colors">Comunidad y Redes</a>
               </li>
             </ul>
           </div>
 
-          {/* Col 3: Social & Heritage Networks */}
+          {/* Col 3: Social & Heritage Networks & Contact */}
           <div className="lg:col-span-4 space-y-4">
             <h4 className="text-xs font-black uppercase tracking-wider text-[#E5A823]">
-              Síguenos en Redes
+              Contacto y Redes
             </h4>
             <p className="text-xs text-[#D7C3CF] leading-relaxed">
               Mantén el contacto con las actividades y el patrimonio vivo de Galeras, Sucre:
             </p>
 
-            <div className="flex items-center gap-3">
+            <div className="flex flex-wrap items-center gap-3">
               <a
                 href={instagramUrl}
                 target="_blank"
@@ -110,6 +113,55 @@ export default function Footer() {
               >
                 <FacebookIcon className="w-5 h-5 group-hover:scale-110 transition-transform" />
               </a>
+
+              <a
+                href="https://wa.me/573164301576?text=Hola,%20deseo%20comunicarme%20con%20la%20Corporaci%C3%B3n%20Soy%20Salvaguardarte"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-xl bg-[#25D366]/20 hover:bg-[#25D366] text-[#25D366] hover:text-white flex items-center justify-center transition-colors shadow group border border-[#25D366]/30"
+                aria-label="WhatsApp 3164301576"
+                title="WhatsApp: 316 430 1576"
+              >
+                <WhatsAppIcon className="w-5 h-5 group-hover:scale-110 transition-transform" />
+              </a>
+
+              <a
+                href="https://wa.me/573027191972?text=Hola,%20deseo%20comunicarme%20con%20la%20Corporaci%C3%B3n%20Soy%20Salvaguardarte"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-xl bg-[#25D366]/20 hover:bg-[#25D366] text-[#25D366] hover:text-white flex items-center justify-center transition-colors shadow group border border-[#25D366]/30"
+                aria-label="WhatsApp 3027191972"
+                title="WhatsApp: 302 719 1972"
+              >
+                <WhatsAppIcon className="w-5 h-5 group-hover:scale-110 transition-transform" />
+              </a>
+            </div>
+
+            {/* Direct WhatsApp Callouts in Footer */}
+            <div className="space-y-1.5 pt-1">
+              <span className="block text-[11px] font-bold uppercase tracking-wider text-[#E5A823]">
+                Líneas de Atención WhatsApp:
+              </span>
+              <div className="flex flex-col sm:flex-row gap-2 text-xs">
+                <a
+                  href="https://wa.me/573164301576?text=Hola,%20deseo%20comunicarme%20con%20la%20Corporaci%C3%B3n%20Soy%20Salvaguardarte"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-white/90 hover:text-[#25D366] transition-colors py-1.5 px-3 rounded-lg bg-white/5 border border-white/10 hover:border-[#25D366]/40"
+                >
+                  <WhatsAppIcon className="w-3.5 h-3.5 text-[#25D366]" />
+                  <span>316 430 1576</span>
+                </a>
+                <a
+                  href="https://wa.me/573027191972?text=Hola,%20deseo%20comunicarme%20con%20la%20Corporaci%C3%B3n%20Soy%20Salvaguardarte"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-white/90 hover:text-[#25D366] transition-colors py-1.5 px-3 rounded-lg bg-white/5 border border-white/10 hover:border-[#25D366]/40"
+                >
+                  <WhatsAppIcon className="w-3.5 h-3.5 text-[#25D366]" />
+                  <span>302 719 1972</span>
+                </a>
+              </div>
             </div>
 
             <div className="p-3.5 rounded-2xl bg-white/5 border border-white/10 text-[11px] text-[#CDB9C7] leading-relaxed italic">

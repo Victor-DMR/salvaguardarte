@@ -11,7 +11,7 @@ import {
   MapPin,
   Calendar
 } from 'lucide-react';
-import { InstagramIcon, FacebookIcon } from './SocialIcons';
+import { InstagramIcon, FacebookIcon, WhatsAppIcon } from './SocialIcons';
 
 export default function SocialCommunity() {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -241,6 +241,56 @@ export default function SocialCommunity() {
 
         </div>
 
+        {/* WhatsApp Direct Contact Channels */}
+        <div className="bg-gradient-to-r from-[#0B4636] via-[#0F6B52] to-[#128C7E] rounded-3xl p-6 sm:p-8 text-white shadow-xl mb-16 border border-emerald-500/30">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
+            <div className="text-center lg:text-left space-y-2">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/15 text-xs font-bold text-[#E5A823] mb-1">
+                <WhatsAppIcon className="w-4 h-4 text-[#25D366]" />
+                <span>Atención Directa e Inmediata por WhatsApp</span>
+              </div>
+              <h3 className="font-serif-title text-2xl sm:text-3xl font-extrabold text-white">
+                Líneas Oficiales de Contacto
+              </h3>
+              <p className="text-xs sm:text-sm text-emerald-100 max-w-2xl leading-relaxed">
+                ¿Deseas información sobre la corporación, talleres pedagógicos, presentaciones o alianzas culturales? Chatea directamente con nuestro equipo:
+              </p>
+            </div>
+
+            <div className="flex flex-col sm:flex-row items-center gap-3 w-full lg:w-auto flex-shrink-0">
+              <a
+                href="https://wa.me/573164301576?text=Hola,%20me%20comunico%20desde%20el%20sitio%20web%20para%20solicitar%20informaci%C3%B3n%20sobre%20la%20Corporaci%C3%B3n%20Soy%20Salvaguardarte"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-5 py-3 rounded-2xl bg-white hover:bg-emerald-50 text-[#0B4636] font-extrabold text-sm shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5"
+              >
+                <div className="w-9 h-9 rounded-xl bg-[#25D366] text-white flex items-center justify-center shadow-sm flex-shrink-0">
+                  <WhatsAppIcon className="w-5 h-5" />
+                </div>
+                <div className="text-left">
+                  <span className="block text-[10px] text-gray-500 uppercase font-bold leading-none">Línea de Contacto 1</span>
+                  <span className="block text-sm font-black text-[#0B4636] leading-tight">316 430 1576</span>
+                </div>
+              </a>
+
+              <a
+                href="https://wa.me/573027191972?text=Hola,%20me%20comunico%20desde%20el%20sitio%20web%20para%20solicitar%20informaci%C3%B3n%20sobre%20la%20Corporaci%C3%B3n%20Soy%20Salvaguardarte"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-5 py-3 rounded-2xl bg-white hover:bg-emerald-50 text-[#0B4636] font-extrabold text-sm shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5"
+              >
+                <div className="w-9 h-9 rounded-xl bg-[#25D366] text-white flex items-center justify-center shadow-sm flex-shrink-0">
+                  <WhatsAppIcon className="w-5 h-5" />
+                </div>
+                <div className="text-left">
+                  <span className="block text-[10px] text-gray-500 uppercase font-bold leading-none">Línea de Contacto 2</span>
+                  <span className="block text-sm font-black text-[#0B4636] leading-tight">302 719 1972</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
         {/* Contact & Volunteering Form */}
         <div className="bg-white rounded-3xl p-6 sm:p-10 shadow-xl border border-[#E5A823]/30 max-w-4xl mx-auto">
           <div className="text-center max-w-xl mx-auto mb-8">
@@ -317,6 +367,31 @@ export default function SocialCommunity() {
                   <Send className="w-4 h-4 text-[#E5A823]" />
                   <span>Enviar Mensaje y Unirme</span>
                 </button>
+              </div>
+
+              <div className="mt-6 pt-5 border-t border-[#EADFCB] flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-[#5B4C56]">
+                <div className="flex items-center gap-2 font-medium">
+                  <WhatsAppIcon className="w-4 h-4 text-[#25D366]" />
+                  <span>¿Prefieres WhatsApp? Escríbenos directamente:</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <a
+                    href="https://wa.me/573164301576?text=Hola,%20quisiera%20ponerme%20en%20contacto%20con%20Salvaguardarte"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 px-3 py-1 rounded-lg bg-[#25D366]/10 text-[#0F6B52] font-bold hover:bg-[#25D366]/20 transition-colors"
+                  >
+                    <span>316 430 1576</span>
+                  </a>
+                  <a
+                    href="https://wa.me/573027191972?text=Hola,%20quisiera%20ponerme%20en%20contacto%20con%20Salvaguardarte"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 px-3 py-1 rounded-lg bg-[#25D366]/10 text-[#0F6B52] font-bold hover:bg-[#25D366]/20 transition-colors"
+                  >
+                    <span>302 719 1972</span>
+                  </a>
+                </div>
               </div>
             </form>
           )}

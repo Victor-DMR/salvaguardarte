@@ -8,8 +8,9 @@ import MisionVision from './components/MisionVision';
 import ValoresSection from './components/ValoresSection';
 import ObjetivosSection from './components/ObjetivosSection';
 import SocialCommunity from './components/SocialCommunity';
+import AliadosSection from './components/AliadosSection';
+import FloatingWhatsApp from './components/FloatingWhatsApp';
 import Footer from './components/Footer';
-import { Sparkles, Award } from 'lucide-react';
 
 export default function App() {
   const marqueeItems = [
@@ -62,9 +63,15 @@ export default function App() {
         {/* Los 7 Objetivos Estratégicos */}
         <ObjetivosSection />
 
+        {/* Red de Aliados Estratégicos */}
+        <AliadosSection />
+
         {/* Redes Sociales (Instagram & Facebook) y Participación */}
         <SocialCommunity />
       </main>
+
+      {/* Floating WhatsApp Contact Button */}
+      <FloatingWhatsApp />
 
       {/* Footer */}
       <Footer />
