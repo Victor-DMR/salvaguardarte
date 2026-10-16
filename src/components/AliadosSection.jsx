@@ -13,7 +13,6 @@ import {
   Award,
   ArrowUpRight
 } from 'lucide-react';
-import { WhatsAppIcon } from './SocialIcons';
 
 const aliadosList = [
   {
@@ -257,28 +256,10 @@ export default function AliadosSection() {
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row flex-wrap items-center gap-3 w-full lg:w-auto flex-shrink-0">
-              <a
-                href="https://wa.me/573164301576?text=Hola,%20deseamos%20conocer%20m%C3%A1s%20sobre%20alianzas%20con%20la%20Corporaci%C3%B3n%20Soy%20Salvaguardarte"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-[#25D366] hover:bg-[#20ba5a] text-[#0C381E] font-extrabold text-sm shadow-md hover:shadow-lg transition-all duration-200"
-              >
-                <WhatsAppIcon className="w-4 h-4 text-[#0C381E]" />
-                <span>WhatsApp 316 430 1576</span>
-              </a>
-              <a
-                href="https://wa.me/573027191972?text=Hola,%20deseamos%20conocer%20m%C3%A1s%20sobre%20alianzas%20con%20la%20Corporaci%C3%B3n%20Soy%20Salvaguardarte"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-white/15 hover:bg-white/25 text-white font-bold text-sm border border-white/25 transition-all duration-200"
-              >
-                <WhatsAppIcon className="w-4 h-4 text-[#25D366]" />
-                <span>WhatsApp 302 719 1972</span>
-              </a>
+            <div className="flex flex-col sm:flex-row items-center gap-3 w-full lg:w-auto flex-shrink-0">
               <a
                 href="#comunidad"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-[#E5A823] hover:bg-[#d69919] text-[#3A0A2E] font-extrabold text-sm shadow-md hover:shadow-lg transition-all duration-200"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-[#E5A823] hover:bg-[#d69919] text-[#3A0A2E] font-extrabold text-sm shadow-md hover:shadow-lg transition-all duration-200"
               >
                 <span>Proponer Alianza</span>
                 <Handshake className="w-4 h-4" />

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Volume2, VolumeX, Menu, X, Sparkles, Heart, Compass } from 'lucide-react';
 import { startFolkSoundtrack, stopFolkSoundtrack, isFolkPlaying } from '../utils/audioSynth';
-import { LinkedinIcon, WhatsAppIcon } from './SocialIcons';
+import { LinkedinIcon } from './SocialIcons';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -52,31 +52,9 @@ export default function Navbar() {
             <span className="truncate">Galeras, Sucre: <strong>Patrimonio Cultural Inmaterial</strong></span>
           </div>
           <div className="hidden md:flex items-center gap-4 text-xs font-medium text-[#E5A823]">
-            <div className="flex items-center gap-2">
-              <WhatsAppIcon className="w-3.5 h-3.5 text-[#25D366]" />
-              <span className="text-white/80">WhatsApp:</span>
-              <a
-                href="https://wa.me/573164301576?text=Hola,%20me%20comunico%20desde%20el%20sitio%20web"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white font-bold hover:text-[#E5A823] transition-colors"
-              >
-                316 430 1576
-              </a>
-              <span className="text-white/40">/</span>
-              <a
-                href="https://wa.me/573027191972?text=Hola,%20me%20comunico%20desde%20el%20sitio%20web"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white font-bold hover:text-[#E5A823] transition-colors"
-              >
-                302 719 1972
-              </a>
-            </div>
-            <span className="text-white/30">|</span>
-            <span className="flex items-center gap-1.5 text-white/90">
+            <span className="flex items-center gap-1.5">
               <span className="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
-              Cultura Viva
+              Cultura Viva y Tradición Sabanera
             </span>
           </div>
         </div>
@@ -211,33 +189,6 @@ export default function Navbar() {
                 </a>
               ))}
               <div className="pt-2 border-t border-[#EADFCB] flex flex-col gap-2">
-                <div className="text-[11px] font-bold text-[#7E1160] flex items-center gap-1.5 pt-1">
-                  <WhatsAppIcon className="w-3.5 h-3.5 text-[#25D366]" />
-                  <span>Contactar por WhatsApp:</span>
-                </div>
-                <div className="grid grid-cols-2 gap-2">
-                  <a
-                    href="https://wa.me/573164301576?text=Hola,%20me%20comunico%20desde%20el%20sitio%20web"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={() => setMobileMenuOpen(false)}
-                    className="flex items-center justify-center gap-1.5 bg-[#25D366] hover:bg-[#20ba5a] text-[#0C381E] py-2 px-2 rounded-xl font-bold text-xs shadow-sm transition-colors"
-                  >
-                    <WhatsAppIcon className="w-3.5 h-3.5 text-[#0C381E]" />
-                    <span>316 430 1576</span>
-                  </a>
-                  <a
-                    href="https://wa.me/573027191972?text=Hola,%20me%20comunico%20desde%20el%20sitio%20web"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={() => setMobileMenuOpen(false)}
-                    className="flex items-center justify-center gap-1.5 bg-[#25D366] hover:bg-[#20ba5a] text-[#0C381E] py-2 px-2 rounded-xl font-bold text-xs shadow-sm transition-colors"
-                  >
-                    <WhatsAppIcon className="w-3.5 h-3.5 text-[#0C381E]" />
-                    <span>302 719 1972</span>
-                  </a>
-                </div>
-
                 <a
                   href="#comunidad"
                   onClick={() => setMobileMenuOpen(false)}
