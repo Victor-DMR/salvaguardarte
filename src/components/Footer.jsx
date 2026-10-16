@@ -19,7 +19,7 @@ export default function Footer() {
           <div className="lg:col-span-5 space-y-4">
             <div className="flex items-center gap-3.5">
               <img
-                src="/assets/logo_web.png"
+                src="/assets/logo_original.png"
                 alt="Logo Corporación Soy Salvaguardarte"
                 className="w-14 h-14 object-contain filter drop-shadow brightness-110"
               />

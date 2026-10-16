@@ -96,7 +96,7 @@ export default function Navbar() {
           <a href="#inicio" className="flex items-center gap-2 sm:gap-3 group text-left flex-shrink-0 min-w-0">
             <div className="relative w-9 h-9 sm:w-12 sm:h-12 flex-shrink-0 transition-transform duration-300 group-hover:scale-105">
               <img
-                src="/assets/logo_web.png"
+                src="/assets/logo_original.png"
                 alt="Logo Corporación Soy Salvaguardarte"
                 className="w-full h-full object-contain filter drop-shadow-sm"
               />

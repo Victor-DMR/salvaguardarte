@@ -202,8 +202,8 @@ export default function SocialCommunity() {
               <div className="p-4 rounded-2xl bg-[#F7F9FC] border border-[#DCE4EE] mb-6 space-y-3">
                 <div className="flex items-center gap-2.5">
                   <img
-                    src="/assets/logo_small.png"
-                    alt="Logo"
+                    src="/assets/logo_original.png"
+                    alt="Logo Corporación Soy Salvaguardarte"
                     className="w-8 h-8 rounded-full bg-white object-contain p-0.5 border"
                   />
                   <div>

@@ -13,6 +13,35 @@ import FloatingWhatsApp from './components/FloatingWhatsApp';
 import Footer from './components/Footer';
 
 export default function App() {
+  React.useEffect(() => {
+    const dismissPreloader = () => {
+      const preloader = document.getElementById('app-preloader');
+      if (preloader) {
+        preloader.classList.add('fade-out');
+        setTimeout(() => {
+          if (preloader && preloader.parentNode) {
+            preloader.remove();
+          }
+        }, 700);
+      }
+    };
+
+    if (document.readyState === 'complete') {
+      const timer = setTimeout(dismissPreloader, 1200);
+      return () => clearTimeout(timer);
+    } else {
+      const handleLoad = () => {
+        setTimeout(dismissPreloader, 900);
+      };
+      window.addEventListener('load', handleLoad);
+      const fallbackTimer = setTimeout(dismissPreloader, 3000);
+      return () => {
+        window.removeEventListener('load', handleLoad);
+        clearTimeout(fallbackTimer);
+      };
+    }
+  }, []);
+
   const marqueeItems = [
     '🏛️ Galeras, Sucre: Patrimonio Inmaterial UNESCO',
     '🎭 Cuadros Vivos: El Arte que Respira en la Calle',

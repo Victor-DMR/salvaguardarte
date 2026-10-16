@@ -2,7 +2,7 @@
 <html lang="es" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/assets/logo_web.png" />
+    <link rel="icon" type="image/png" href="/assets/logo_original.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Corporación Soy Salvaguardarte | Galeras, Sucre - Patrimonio, Cuadros Vivos y Tradición</title>
     <meta name="description" content="Salvaguardando, investigando y proyectando el patrimonio cultural vivo de Colombia desde Galeras, Sucre. Hogar de los Cuadros Vivos, la gaita sabanera y el Festival de la Algarroba." />
@@ -11,8 +11,164 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Critical Preloader Styles (Instant Display before scripts load) -->
+    <style>
+      #app-preloader {
+        position: fixed;
+        inset: 0;
+        z-index: 999999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: radial-gradient(circle at center, #350F2C 0%, #1F071B 65%, #140312 100%);
+        color: #FDF6EE;
+        font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+        transition: opacity 0.65s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.65s ease, transform 0.65s ease;
+      }
+      #app-preloader.fade-out {
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(1.04);
+        pointer-events: none;
+      }
+      .preloader-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 24px;
+        max-width: 440px;
+        width: 90%;
+      }
+      .preloader-logo-wrapper {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        margin-bottom: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .preloader-glow {
+        position: absolute;
+        inset: -16px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(229, 168, 35, 0.45) 0%, rgba(222, 115, 73, 0.2) 50%, transparent 72%);
+        filter: blur(14px);
+        animation: preloader-pulse 2.2s ease-in-out infinite alternate;
+      }
+      .preloader-ring {
+        position: absolute;
+        inset: -6px;
+        border-radius: 50%;
+        border: 2px dashed rgba(229, 168, 35, 0.55);
+        animation: preloader-spin 14s linear infinite;
+      }
+      .preloader-logo {
+        position: relative;
+        z-index: 2;
+        width: 130px;
+        height: 130px;
+        object-fit: contain;
+        filter: drop-shadow(0 10px 22px rgba(0, 0, 0, 0.55));
+        animation: preloader-breathe 2.4s ease-in-out infinite alternate;
+      }
+      .preloader-info {
+        margin-bottom: 20px;
+      }
+      .preloader-eyebrow {
+        display: inline-block;
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: #E5A823;
+        margin-bottom: 6px;
+      }
+      .preloader-title {
+        font-family: 'Playfair Display', Georgia, serif;
+        font-size: 26px;
+        font-weight: 700;
+        color: #FFFFFF;
+        letter-spacing: -0.01em;
+        line-height: 1.2;
+        margin: 0 0 4px 0;
+      }
+      .preloader-subtitle {
+        font-size: 12px;
+        color: #D7C3CF;
+        margin: 0;
+        font-weight: 500;
+      }
+      .preloader-progress-track {
+        width: 190px;
+        height: 4px;
+        background: rgba(255, 255, 255, 0.12);
+        border-radius: 999px;
+        overflow: hidden;
+        margin-bottom: 12px;
+        position: relative;
+      }
+      .preloader-progress-bar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 45%;
+        background: linear-gradient(90deg, #DE7349, #E5A823, #DE7349);
+        border-radius: 999px;
+        animation: preloader-loading 1.6s ease-in-out infinite;
+      }
+      .preloader-text {
+        font-size: 11px;
+        color: #BCA3B4;
+        margin: 0;
+        font-style: italic;
+      }
+      @keyframes preloader-pulse {
+        0% { transform: scale(0.92); opacity: 0.55; }
+        100% { transform: scale(1.18); opacity: 1; }
+      }
+      @keyframes preloader-breathe {
+        0% { transform: scale(0.96); }
+        100% { transform: scale(1.04); }
+      }
+      @keyframes preloader-spin {
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes preloader-loading {
+        0% { left: -50%; width: 30%; }
+        50% { width: 70%; }
+        100% { left: 100%; width: 30%; }
+      }
+    </style>
   </head>
   <body class="bg-[#FCFAF7] text-[#2C2229] antialiased selection:bg-[#E5A823]/30 selection:text-[#7E1160]">
+    <!-- Initial Document Preloader with logo_original.png -->
+    <div id="app-preloader" aria-label="Cargando Corporación Soy Salvaguardarte">
+      <div class="preloader-content">
+        <div class="preloader-logo-wrapper">
+          <div class="preloader-glow"></div>
+          <div class="preloader-ring"></div>
+          <img
+            src="/assets/logo_original.png"
+            alt="Logo Corporación Soy Salvaguardarte"
+            class="preloader-logo"
+          />
+        </div>
+        <div class="preloader-info">
+          <span class="preloader-eyebrow">PATRIMONIO INMATERIAL UNESCO</span>
+          <h1 class="preloader-title">Soy Salvaguardarte</h1>
+          <p class="preloader-subtitle">Galeras, Sucre · Colombia</p>
+        </div>
+        <div class="preloader-progress-track">
+          <div class="preloader-progress-bar"></div>
+        </div>
+        <p class="preloader-text">Preservando el arte y la memoria sabanera...</p>
+      </div>
+    </div>
+
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
