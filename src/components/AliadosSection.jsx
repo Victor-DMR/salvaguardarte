@@ -25,6 +25,18 @@ const aliadosList = [
     name: 'Institución Educativa Antonio Nariño (INEAN)',
     image: '/assets/aliados_fotos/Instituto_Educati_a_Antonio_Nariño.webp',
     filename: 'Instituto_Educati_a_Antonio_Nariño.webp'
+  },
+  {
+    id: 'corporacion-bailadores-tradicionales',
+    name: 'Corporación Bailadores Tradicionales',
+    image: '/assets/aliados_fotos/corporacion_bailadores_tradicionales.webp',
+    filename: 'corporacion_bailadores_tradicionales.webp'
+  },
+  {
+    id: 'nicho-de-creadores',
+    name: 'Nicho de Creadores',
+    image: '/assets/aliados_fotos/nicho_de_creadores.webp',
+    filename: 'nicho_de_creadores.webp'
   }
 ];
 
@@ -50,8 +62,8 @@ export default function AliadosSection() {
           </h2>
         </div>
 
-        {/* Grid of Allies: Only Photos / Logos */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 items-center">
+        {/* Grid of Allies: 6 Photos / Logos */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6 items-center">
           {aliadosList.map((aliado) => (
             <div
               key={aliado.id}

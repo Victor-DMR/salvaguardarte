@@ -81,17 +81,42 @@ export default function Navbar() {
     }
   ];
 
+  const marqueeItems = [
+    '🏛️ Corporación Soy Salvaguardarte · Galeras, Sucre',
+    '🛡️ Naturaleza Jurídica: Entidad Sin Ánimo de Lucro (ESAL)',
+    '✨ Salvaguardia, Formación, Creación y Circulación',
+    '🎭 Custodiamos los Cuadros Vivos · Patrimonio UNESCO',
+    '🌿 Festival Folclórico de la Algarroba',
+    '👥 Fortalecimiento Comunitario & Liderazgo Juvenil',
+    '🪈 Gaita Sabanera & Tradición Oral',
+    '🤝 Cooperación Estratégica Hacia el 2035',
+  ];
+
   return (
     <>
-      {/* Main Navbar */}
-      <header
-        className={`sticky top-0 z-40 transition-all duration-300 ${
-          isScrolled
-            ? 'bg-[#FCFAF7]/95 backdrop-blur-md shadow-md border-b border-[#E5A823]/25 py-2'
-            : 'bg-[#FCFAF7] border-b border-[#EADFCB]/70 py-2 sm:py-2.5'
-        }`}
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
+      {/* Main Header Container (Sticky at top) */}
+      <header className="sticky top-0 z-50">
+        {/* Banner animado cultural (arriba del todo, fijo con el scroll) */}
+        <div className="bg-[#7E1160] text-[#FFF7EC] py-2 overflow-hidden border-b border-[#E5A823]/40 shadow-inner select-none">
+          <div className="animate-marquee flex items-center gap-8 whitespace-nowrap text-[11px] sm:text-xs font-bold tracking-wider uppercase">
+            {[...marqueeItems, ...marqueeItems].map((item, idx) => (
+              <span key={idx} className="flex items-center gap-2">
+                <span>{item}</span>
+                <span className="text-[#E5A823] text-sm">•</span>
+              </span>
+            ))}
+          </div>
+        </div>
+
+        {/* Main Navbar */}
+        <div
+          className={`transition-all duration-300 ${
+            isScrolled
+              ? 'bg-[#FCFAF7]/95 backdrop-blur-md shadow-md border-b border-[#E5A823]/25 py-2'
+              : 'bg-[#FCFAF7] border-b border-[#EADFCB]/70 py-2 sm:py-2.5'
+          }`}
+        >
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
           
           {/* Logo & Brand */}
           <a href="#inicio" className="flex items-center gap-2.5 sm:gap-3 group text-left flex-shrink-0">
@@ -219,7 +244,7 @@ export default function Navbar() {
             {/* Audio Toggle Button */}
             <button
               onClick={toggleSound}
-              title={audioActive ? 'Pausar música sabanera' : 'Escuchar Gaita y Tambor'}
+              title={audioActive ? 'Pausar música sabanera' : 'Escuchar Gaita corta'}
               className={`flex items-center gap-1.5 p-2 sm:px-3 sm:py-2 rounded-full text-xs font-semibold transition-all duration-300 border flex-shrink-0 ${
                 audioActive
                   ? 'bg-[#7E1160] text-[#FFF9F2] border-[#7E1160] shadow-md shadow-[#7E1160]/20'
@@ -240,7 +265,7 @@ export default function Navbar() {
               ) : (
                 <>
                   <VolumeX className="w-4 h-4 text-[#DE7349] flex-shrink-0" />
-                  <span className="hidden sm:inline text-xs font-bold">Flauta & Gaita</span>
+                  <span className="hidden sm:inline text-xs font-bold">Gaita corta</span>
                 </>
               )}
             </button>
@@ -280,7 +305,7 @@ export default function Navbar() {
               ) : (
                 <>
                   <VolumeX className="w-4 h-4 text-[#DE7349]" />
-                  <span>Activar Música de Gaita & Flauta</span>
+                  <span>Activar Música de Gaita corta</span>
                 </>
               )}
             </button>
@@ -367,6 +392,7 @@ export default function Navbar() {
             </nav>
           </div>
         )}
+        </div>
       </header>
     </>
   );

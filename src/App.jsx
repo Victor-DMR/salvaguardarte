@@ -42,38 +42,15 @@ export default function App() {
     }
   }, []);
 
-  const marqueeItems = [
-    '🏛️ Corporación Soy Salvaguardarte · Galeras, Sucre',
-    '🛡️ Naturaleza Jurídica: Entidad Sin Ánimo de Lucro (ESAL)',
-    '✨ Salvaguardia, Formación, Creación y Circulación',
-    '🎭 Custodiamos los Cuadros Vivos · Patrimonio UNESCO',
-    '🌿 Festival Folclórico de la Algarroba',
-    '👥 Fortalecimiento Comunitario & Liderazgo Juvenil',
-    '🪈 Gaita Sabanera & Tradición Oral',
-    '🤝 Cooperación Estratégica Hacia el 2035',
-  ];
-
   return (
     <div className="min-h-screen flex flex-col bg-[#FCFAF7] selection:bg-[#DE7349]/20 selection:text-[#7E1160]">
-      {/* Top Navigation Bar */}
+      {/* Top Navigation Bar with Marquee Banner included */}
       <Navbar />
 
       {/* Main Content Sections */}
       <main className="flex-1">
         {/* 1. Hero: Naturaleza, Propósito y Ámbito de Salvaguardarte */}
         <Hero />
-
-        {/* Continuous Cultural Marquee Tape */}
-        <div className="bg-[#7E1160] text-[#FFF7EC] py-3 overflow-hidden border-y-2 border-[#E5A823]/40 shadow-inner">
-          <div className="animate-marquee flex items-center gap-10 whitespace-nowrap text-xs sm:text-sm font-bold tracking-wider uppercase">
-            {[...marqueeItems, ...marqueeItems].map((item, idx) => (
-              <span key={idx} className="flex items-center gap-2">
-                <span>{item}</span>
-                <span className="text-[#E5A823] text-base">•</span>
-              </span>
-            ))}
-          </div>
-        </div>
 
         {/* 2. Naturaleza Jurídica, Propósito y Ámbito de Actuación */}
         <NaturalezaProposito />

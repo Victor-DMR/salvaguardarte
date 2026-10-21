@@ -34,7 +34,7 @@ export default function EquipoHumano() {
       role: 'Gestión & Producción Artística',
       badge: 'Creación & Operación Cultural',
       category: 'Producción Artística',
-      description: 'Especialista en producción escénica, coordinación artística y gestión comunitaria en territorio. Articula los procesos de formación, el montaje de eventos culturales, la relación directa con creadores, directores de comparsas, músicos de gaita, portadores de tradición y el equipo técnico de campo.',
+      description: 'Maestra en Artes escénicas, coordinación artística y gestión comunitaria en territorio. Articula los procesos de formación, el montaje de eventos culturales, la relación directa con creadores, directores de comparsas, músicos de gaita, portadores de tradición y el equipo técnico de campo.',
       responsibilities: [
         'Dirección y coordinación de producción en eventos, desfiles y festivales culturales.',
         'Seguimiento pedagógico y metodológico en semilleros de formación artística.',
