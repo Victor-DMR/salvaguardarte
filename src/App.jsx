@@ -1,14 +1,14 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import CulturalPlayer from './components/CulturalPlayer';
-import CuadrosVivosGallery from './components/CuadrosVivosGallery';
-import FestivalAlgarroba from './components/FestivalAlgarroba';
-import MisionVision from './components/MisionVision';
-import ValoresSection from './components/ValoresSection';
+import NaturalezaProposito from './components/NaturalezaProposito';
+import EquipoHumano from './components/EquipoHumano';
+import ProyectosEnAccion from './components/ProyectosEnAccion';
 import ObjetivosSection from './components/ObjetivosSection';
-import SocialCommunity from './components/SocialCommunity';
+import ValoresSection from './components/ValoresSection';
+import PatrimonioCarrusel from './components/PatrimonioCarrusel';
 import AliadosSection from './components/AliadosSection';
+import SocialCommunity from './components/SocialCommunity';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
 import Footer from './components/Footer';
 
@@ -43,23 +43,24 @@ export default function App() {
   }, []);
 
   const marqueeItems = [
-    '🏛️ Galeras, Sucre: Patrimonio Inmaterial UNESCO',
-    '🎭 Cuadros Vivos: El Arte que Respira en la Calle',
-    '🪈 Gaita Sabanera & Flauta de Millo Ancestral',
+    '🏛️ Corporación Soy Salvaguardarte · Galeras, Sucre',
+    '🛡️ Naturaleza Jurídica: Entidad Sin Ánimo de Lucro (ESAL)',
+    '✨ Salvaguardia, Formación, Creación y Circulación',
+    '🎭 Custodiamos los Cuadros Vivos · Patrimonio UNESCO',
     '🌿 Festival Folclórico de la Algarroba',
-    '🎨 Diosas y Diosos de la Inmovilidad',
-    '✨ Corporación Soy Salvaguardarte',
-    '💛 Tradición, Memoria y Futuro Hacia el 2035',
+    '👥 Fortalecimiento Comunitario & Liderazgo Juvenil',
+    '🪈 Gaita Sabanera & Tradición Oral',
+    '🤝 Cooperación Estratégica Hacia el 2035',
   ];
 
   return (
     <div className="min-h-screen flex flex-col bg-[#FCFAF7] selection:bg-[#DE7349]/20 selection:text-[#7E1160]">
-      {/* Top Navigation */}
+      {/* Top Navigation Bar */}
       <Navbar />
 
       {/* Main Content Sections */}
       <main className="flex-1">
-        {/* Hero Section */}
+        {/* 1. Hero: Naturaleza, Propósito y Ámbito de Salvaguardarte */}
         <Hero />
 
         {/* Continuous Cultural Marquee Tape */}
@@ -74,28 +75,28 @@ export default function App() {
           </div>
         </div>
 
-        {/* Gallery: Cuadros Vivos a Cielo Abierto */}
-        <CuadrosVivosGallery />
+        {/* 2. Naturaleza Jurídica, Propósito y Ámbito de Actuación */}
+        <NaturalezaProposito />
 
-        {/* Interactive Soundscape, Gaita and Theatre */}
-        <CulturalPlayer />
+        {/* 3. Equipo Humano & Liderazgo (María Fernanda Severiche & Tatiana Narváez) */}
+        <EquipoHumano />
 
-        {/* Festival de la Algarroba & Street Art Creation */}
-        <FestivalAlgarroba />
+        {/* 4. Proyectos en Acción: Formación, Saberes, Eventos y los 9 Proyectos */}
+        <ProyectosEnAccion />
 
-        {/* Misión, Visión 2035 y Compromiso Institucional */}
-        <MisionVision />
-
-        {/* Los 8 Valores Institucionales */}
-        <ValoresSection />
-
-        {/* Los 7 Objetivos Estratégicos */}
+        {/* 5. Los 6 Objetivos Estratégicos */}
         <ObjetivosSection />
 
-        {/* Red de Aliados Estratégicos */}
+        {/* 6. Los 8 Valores Institucionales */}
+        <ValoresSection />
+
+        {/* 7. Carrusel de Fotos: Cuadros Vivos y Festival de la Algarroba */}
+        <PatrimonioCarrusel />
+
+        {/* 8. Red de Aliados Estratégicos */}
         <AliadosSection />
 
-        {/* Redes Sociales (Instagram & Facebook) y Participación */}
+        {/* 9. Redes Sociales (Instagram & Facebook) y Participación */}
         <SocialCommunity />
       </main>
 

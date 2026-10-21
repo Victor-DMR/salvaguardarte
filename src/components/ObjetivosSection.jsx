@@ -1,101 +1,140 @@
 import React, { useState } from 'react';
 import { 
   Target, 
+  Sparkles, 
   BookOpen, 
   Palette, 
+  Share2, 
   Users2, 
-  Coins, 
-  Building2, 
-  Globe, 
-  Check, 
-  ArrowUpRight,
-  Sparkles
+  Handshake, 
+  ArrowUpRight, 
+  CheckCircle2, 
+  ShieldCheck 
 } from 'lucide-react';
 
-const objetivos = [
+const strategicGoals = [
   {
+    id: 'patrimonio-vivo',
     num: '01',
-    title: 'Salvaguardia y gestión del patrimonio cultural',
-    desc: 'Fortalecer la identificación, investigación, documentación, protección, transmisión y apropiación social del patrimonio cultural material e inmaterial de Colombia, con especial énfasis en los Cuadros Vivos de Galeras y en las manifestaciones que requieran procesos de salvaguardia.',
-    icon: Target,
-    badge: 'Prioridad UNESCO'
+    title: 'Patrimonio Vivo',
+    subtitle: 'Salvaguardia, Investigación y Memoria',
+    desc: 'Fortalecer la identificación, investigación etnográfica, documentación rigurosa, protección, transmisión y apropiación social del patrimonio cultural material e inmaterial de Galeras, Sucre y Colombia, con especial compromiso en los Cuadros Vivos y saberes ancestrales en riesgo.',
+    icon: Sparkles,
+    badge: 'Salvaguardia Integral',
+    actions: [
+      'Documentación y registro etnográfico de saberes y portadores de tradición.',
+      'Acompañamiento a colectivos de vigías del patrimonio cultural.',
+      'Protección activa de las manifestaciones declaradas por la UNESCO y la Nación.'
+    ]
   },
   {
+    id: 'formacion',
     num: '02',
-    title: 'Formación, transmisión de saberes y liderazgo cultural',
-    desc: 'Diseñar e implementar procesos de formación artística, cultural, patrimonial y comunitaria que fortalezcan las capacidades de niñas, niños, jóvenes, mujeres, artistas, portadores de tradición, gestores culturales y organizaciones sociales.',
+    title: 'Formación',
+    subtitle: 'Pedagogía Artística & Saberes Comunitarios',
+    desc: 'Diseñar e implementar procesos de formación artística comunitaria, cultural y patrimonial que fortalezcan las habilidades y liderazgos de niñas, niños, adolescentes, jóvenes, mujeres, maestros artesanos y gestores culturales.',
     icon: BookOpen,
-    badge: 'Comunidad & Semilleros'
+    badge: 'Semilleros & Pedagogía',
+    actions: [
+      'Escuelas y talleres de iniciación y perfeccionamiento en artes plásticas y escénicas.',
+      'Procesos de música tradicional sabanera: gaitas, cumbiambas y percusión.',
+      'Transmisión directa de saberes entre sabedores mayores y nuevas generaciones.'
+    ]
   },
   {
+    id: 'creacion',
     num: '03',
-    title: 'Creación, innovación y circulación artística',
-    desc: 'Impulsar la creación individual y colectiva, la experimentación interdisciplinaria y la circulación de obras, experiencias y manifestaciones culturales mediante encuentros, festivales, residencias, intercambios, plataformas digitales y alianzas nacionales e internacionales.',
+    title: 'Creación',
+    subtitle: 'Innovación, Arte Popular & Vanguardia',
+    desc: 'Estimular la creación individual y colectiva, la experimentación interdisciplinaria y la producción de nuevas obras que dialoguen con la identidad local, releyendo las raíces culturales con creatividad e innovación contemporánea.',
     icon: Palette,
-    badge: 'Innovación & Escena'
+    badge: 'Expresión & Creación',
+    actions: [
+      'Residencias y laboratorios creativos en los barrios y veredas de Galeras.',
+      'Nuevos montajes escénicos que fusionan tradición oral, música y artes vivas.',
+      'Acompañamiento a creadores locales en la producción de contenidos con identidad.'
+    ]
   },
   {
+    id: 'circulacion',
     num: '04',
-    title: 'Inclusión, participación y transformación social',
-    desc: 'Desarrollar iniciativas culturales accesibles y participativas que contribuyan a la garantía de derechos culturales, la equidad de género, el reconocimiento de la diversidad, el diálogo intercultural y el fortalecimiento del tejido social en comunidades urbanas y rurales.',
-    icon: Users2,
-    badge: 'Tejido Social Caribe'
+    title: 'Circulación',
+    subtitle: 'Difusión, Encuentros & Movilidad Artística',
+    desc: 'Promover la visibilidad, divulgación y circulación de artistas, agrupaciones, obras y saberes tradicionales a través de festivales, desfiles, ferias, circuitos itinerantes y plataformas digitales en ámbitos local, nacional e internacional.',
+    icon: Share2,
+    badge: 'Visibilidad & Difusión',
+    actions: [
+      'Puesta en valor en festivales regionales y convocatorias de circulación nacional.',
+      'Producción de desfiles de tradiciones, muestras públicas y carnavales comunitarios.',
+      'Circulación de mitos, leyendas, décimas y cantos de vaquería en nuevos escenarios.'
+    ]
   },
   {
+    id: 'fortalecimiento-comunitario',
     num: '05',
-    title: 'Sostenibilidad económica y economías culturales y creativas',
-    desc: 'Fortalecer las capacidades de emprendimiento, gestión, comercialización y generación de ingresos de artistas, portadores de tradición, emprendedores y organizaciones culturales, promoviendo modelos económicos éticos que reconozcan el valor del trabajo creativo y contribuyan a la sostenibilidad de los procesos patrimoniales.',
-    icon: Coins,
-    badge: 'Economía Naranja Ética'
+    title: 'Fortalecimiento Comunitario',
+    subtitle: 'Inclusión, Equidad & Tejido Social',
+    desc: 'Desarrollar proyectos participativos orientados a la garantía efectiva de los derechos culturales, la equidad de género, el liderazgo juvenil, la cohesión comunitaria y el estímulo a economías culturales éticas y sostenibles.',
+    icon: Users2,
+    badge: 'Tejido Social & Juventudes',
+    actions: [
+      'Proyectos comunitarios barriales como "Camino Joven" y "Jóvenes Dejando Huellas".',
+      'Empoderamiento de comités comunitarios, colectivos de mujeres y familias creadoras.',
+      'Generación de modelos de sostenibilidad y reconocimiento digno del trabajo cultural.'
+    ]
   },
   {
+    id: 'cooperacion',
     num: '06',
-    title: 'Fortalecimiento institucional y cooperación estratégica',
-    desc: 'Consolidar una estructura organizativa, administrativa, financiera y técnica transparente y sostenible, capaz de formular, gestionar y ejecutar proyectos de calidad, establecer alianzas con entidades públicas y privadas, acceder a fondos nacionales e internacionales y participar en redes de cooperación cultural.',
-    icon: Building2,
-    badge: 'Gobernanza & Alianzas'
-  },
-  {
-    num: '07',
-    title: 'Proyección nacional e internacional del patrimonio',
-    desc: 'Posicionar a la Corporación Soy Salvaguardarte como una organización reconocida por su aporte a la salvaguardia patrimonial, mediante la documentación y difusión de experiencias, la participación en redes, la cooperación intercultural y la circulación de las expresiones culturales de Colombia, proyectando especialmente los Cuadros Vivos de Galeras a escenarios nacionales e internacionales.',
-    icon: Globe,
-    badge: 'Impacto Global'
-  },
+    title: 'Cooperación',
+    subtitle: 'Alianzas Estratégicas & Concertación',
+    desc: 'Consolidar alianzas estratégicas con entidades públicas y privadas, administraciones municipales, cabildos indígenas, instituciones educativas, corporaciones aliadas y fondos de cooperación nacional e internacional.',
+    icon: Handshake,
+    badge: 'Redes & Alianzas',
+    actions: [
+      'Concertación con el Ministerio de las Culturas, las Artes y los Saberes.',
+      'Trabajo articulado con cabildos indígenas como Costa de Oro (Sampués).',
+      'Articulación pedagógica con colegios como la IE Antonio Nariño (INEAN).'
+    ]
+  }
 ];
 
 export default function ObjetivosSection() {
   const [selectedObjective, setSelectedObjective] = useState(0);
 
   return (
-    <section id="objetivos" className="py-16 sm:py-24 bg-[#FCFAF7] relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="objetivos" className="py-16 sm:py-24 bg-[#FCFAF7] relative overflow-hidden">
+      
+      {/* Background glow */}
+      <div className="absolute top-1/2 left-0 w-80 h-80 bg-[#E5A823]/5 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#7E1160]/10 border border-[#7E1160]/20 text-xs font-bold text-[#7E1160] mb-3">
-            <Target className="w-3.5 h-3.5 text-[#DE7349]" />
-            <span>Ruta de Acción Estratégica</span>
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#7E1160]/10 border border-[#7E1160]/20 text-xs font-bold text-[#7E1160] mb-3">
+            <Target className="w-4 h-4 text-[#DE7349]" />
+            <span>Plan Estratégico Corporativo</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#2B1B26] tracking-tight">
-            Nuestros 7 Objetivos Estratégicos
+            Nuestros 6 Objetivos Estratégicos
           </h2>
           <p className="mt-3 text-base sm:text-lg text-[#61515C] leading-relaxed">
-            Metas medibles y transformadoras para asegurar que el patrimonio vivo de Galeras y Colombia prospere y trascienda fronteras.
+            Ejes rectores que fundamentan el actuar de la <strong>Corporación Soy Salvaguardarte</strong> en beneficio de Galeras, Sucre y Colombia.
           </p>
         </div>
 
         {/* 2-Column Interactive layout */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           
-          {/* Left Column: List of 7 Goals */}
+          {/* Left Column: Interactive List */}
           <div className="lg:col-span-6 space-y-3">
-            {objetivos.map((obj, index) => {
+            {strategicGoals.map((obj, index) => {
               const Icon = obj.icon;
               const isSelected = selectedObjective === index;
               return (
                 <div
-                  key={obj.num}
+                  key={obj.id}
                   onClick={() => setSelectedObjective(index)}
                   className={`p-4 sm:p-5 rounded-2xl border transition-all duration-300 cursor-pointer flex items-center justify-between gap-4 ${
                     isSelected
@@ -104,19 +143,19 @@ export default function ObjetivosSection() {
                   }`}
                 >
                   <div className="flex items-center gap-3.5">
-                    <span className={`w-8 h-8 rounded-xl flex items-center justify-center text-xs font-black ${
+                    <span className={`w-9 h-9 rounded-xl flex items-center justify-center text-xs font-black transition-colors ${
                       isSelected ? 'bg-[#E5A823] text-[#3D0A2E]' : 'bg-[#F4ECE1] text-[#7E1160]'
                     }`}>
                       {obj.num}
                     </span>
                     <div>
-                      <h4 className="font-serif-title font-bold text-sm sm:text-base leading-snug line-clamp-1">
+                      <h4 className="font-serif-title font-bold text-base sm:text-lg leading-snug line-clamp-1">
                         {obj.title}
                       </h4>
-                      <span className={`text-[11px] font-medium ${
+                      <span className={`text-[11px] font-medium block mt-0.5 ${
                         isSelected ? 'text-amber-200' : 'text-[#84747E]'
                       }`}>
-                        {obj.badge}
+                        {obj.subtitle}
                       </span>
                     </div>
                   </div>
@@ -131,40 +170,49 @@ export default function ObjetivosSection() {
 
           {/* Right Column: In-Depth Spotlight Card */}
           <div className="lg:col-span-6 sticky top-28">
-            <div className="bg-gradient-to-br from-[#FFFBF5] to-[#FBF3E6] rounded-3xl p-7 sm:p-10 border border-[#E5A823]/40 shadow-xl shadow-[#7E1160]/5 space-y-6">
+            <div className="bg-gradient-to-br from-[#FFFBF5] to-[#FBF3E6] rounded-3xl p-7 sm:p-9 border border-[#E5A823]/40 shadow-xl shadow-[#7E1160]/5 space-y-6">
               
               <div className="flex items-center justify-between">
                 <span className="text-xs font-extrabold uppercase tracking-widest text-[#DE7349] bg-[#F7EFE4] px-3 py-1 rounded-full border border-[#DE7349]/20">
-                  Objetivo Estratégico {objetivos[selectedObjective].num}
+                  Eje Estratégico {strategicGoals[selectedObjective].num}
                 </span>
                 <span className="text-xs font-bold text-[#7E1160] bg-white px-3 py-1 rounded-full shadow-sm">
-                  {objetivos[selectedObjective].badge}
+                  {strategicGoals[selectedObjective].badge}
                 </span>
               </div>
 
               <div>
-                <h3 className="font-serif-title text-2xl sm:text-3xl font-bold text-[#640E4D] leading-tight mb-4">
-                  {objetivos[selectedObjective].title}
+                <h3 className="font-serif-title text-2xl sm:text-3xl font-bold text-[#640E4D] leading-tight mb-2">
+                  {strategicGoals[selectedObjective].title}
                 </h3>
+                <p className="text-sm font-semibold text-[#DE7349] mb-4">
+                  {strategicGoals[selectedObjective].subtitle}
+                </p>
 
                 <p className="text-base text-[#4C3B47] leading-relaxed">
-                  {objetivos[selectedObjective].desc}
+                  {strategicGoals[selectedObjective].desc}
                 </p>
               </div>
 
-              <div className="p-4 rounded-2xl bg-white/80 border border-[#E5A823]/30 space-y-2">
-                <div className="flex items-center gap-2 text-xs font-bold text-[#7E1160]">
-                  <Sparkles className="w-4 h-4 text-[#DE7349]" />
-                  <span>Enfoque Territorial y Comunitario</span>
+              {/* Action lines for this objective */}
+              <div className="p-4 sm:p-5 rounded-2xl bg-white/90 border border-[#E5A823]/30 space-y-3">
+                <div className="flex items-center gap-2 text-xs font-bold text-[#7E1160] uppercase tracking-wider">
+                  <ShieldCheck className="w-4 h-4 text-[#DE7349]" />
+                  <span>Líneas de Acción Territorial</span>
                 </div>
-                <p className="text-xs text-[#63535E] leading-relaxed">
-                  Implementado con participación activa desde Galeras, Sucre, vinculando a portadores de tradición, agentes culturales y entidades aliadas a nivel nacional e internacional.
-                </p>
+                <ul className="space-y-2 text-xs sm:text-sm text-[#554652]">
+                  {strategicGoals[selectedObjective].actions.map((act, aIdx) => (
+                    <li key={aIdx} className="flex items-start gap-2.5">
+                      <CheckCircle2 className="w-4 h-4 text-[#2D6A4F] flex-shrink-0 mt-0.5" />
+                      <span>{act}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
 
-              <div className="pt-2 flex items-center justify-between text-xs text-[#8A7984]">
+              <div className="pt-2 flex items-center justify-between text-xs text-[#8A7984] border-t border-[#EAE0D1]">
                 <span>Estatutos Oficiales · Salvaguardarte</span>
-                <span className="text-[#DE7349] font-bold">Galeras, Sucre</span>
+                <span className="text-[#DE7349] font-bold">Galeras, Sucre · Colombia</span>
               </div>
 
             </div>

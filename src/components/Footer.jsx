@@ -19,7 +19,7 @@ export default function Footer() {
           <div className="lg:col-span-5 space-y-4">
             <div className="flex items-center gap-3.5">
               <img
-                src="/assets/logo_original.png"
+                src="/assets/logo_original.webp"
                 alt="Logo Corporación Soy Salvaguardarte"
                 className="w-14 h-14 object-contain filter drop-shadow brightness-110"
               />
@@ -38,13 +38,19 @@ export default function Footer() {
             </div>
 
             <p className="text-xs sm:text-sm text-[#D7C3CF] leading-relaxed max-w-sm">
-              Organización cultural sin ánimo de lucro dedicada a proteger, investigar y proyectar los Cuadros Vivos, la música de gaita y las expresiones tradicionales del Caribe colombiano.
+              Entidad sin ánimo de lucro (ESAL) con sede en Galeras, Sucre. Comprometida con la salvaguardia, formación artística comunitaria, investigación, creación y circulación del patrimonio vivo de Colombia.
             </p>
+
+            <div className="pt-2 border-t border-white/10 space-y-1 text-xs text-[#E1CCD9]">
+              <div className="font-semibold text-[#E5A823]">Equipo de Dirección:</div>
+              <div>• <strong>María Fernanda Severiche Olascuaga</strong> — Dirección / Representante Legal</div>
+              <div>• <strong>Tatiana Narváez Pineda</strong> — Gestión y Producción Artística</div>
+            </div>
 
             <div className="flex items-center gap-2 pt-1">
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 text-[11px] font-bold text-[#E5A823] border border-[#E5A823]/30">
                 <Award className="w-3.5 h-3.5 text-[#E5A823]" />
-                Patrimonio Inmaterial UNESCO 2024
+                Patrimonio Inmaterial UNESCO & Nación
               </span>
             </div>
           </div>
@@ -59,19 +65,19 @@ export default function Footer() {
                 <a href="#inicio" className="hover:text-white transition-colors">Inicio</a>
               </li>
               <li>
-                <a href="#cuadros-vivos" className="hover:text-white transition-colors">Cuadros Vivos de Galeras</a>
+                <a href="#naturaleza-proposito" className="hover:text-white transition-colors">Naturaleza & Propósito</a>
               </li>
               <li>
-                <a href="#festival" className="hover:text-white transition-colors">Festival de la Algarroba</a>
+                <a href="#equipo-humano" className="hover:text-white transition-colors">Equipo Humano</a>
               </li>
               <li>
-                <a href="#mision-vision" className="hover:text-white transition-colors">Misión y Visión 2035</a>
+                <a href="#proyectos-en-accion" className="hover:text-white transition-colors">Proyectos en Acción</a>
               </li>
               <li>
-                <a href="#valores" className="hover:text-white transition-colors">Nuestros 8 Valores</a>
+                <a href="#objetivos" className="hover:text-white transition-colors">6 Objetivos Estratégicos</a>
               </li>
               <li>
-                <a href="#objetivos" className="hover:text-white transition-colors">7 Objetivos Estratégicos</a>
+                <a href="#patrimonio-custodiado" className="hover:text-white transition-colors">Cuadros Vivos & Festival</a>
               </li>
               <li>
                 <a href="#aliados" className="hover:text-white transition-colors">Aliados Estratégicos</a>
@@ -137,32 +143,7 @@ export default function Footer() {
               </a>
             </div>
 
-            {/* Direct WhatsApp Callouts in Footer */}
-            <div className="space-y-1.5 pt-1">
-              <span className="block text-[11px] font-bold uppercase tracking-wider text-[#E5A823]">
-                Líneas de Atención WhatsApp:
-              </span>
-              <div className="flex flex-col sm:flex-row gap-2 text-xs">
-                <a
-                  href="https://wa.me/573164301576?text=Hola,%20deseo%20comunicarme%20con%20la%20Corporaci%C3%B3n%20Soy%20Salvaguardarte"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-white/90 hover:text-[#25D366] transition-colors py-1.5 px-3 rounded-lg bg-white/5 border border-white/10 hover:border-[#25D366]/40"
-                >
-                  <WhatsAppIcon className="w-3.5 h-3.5 text-[#25D366]" />
-                  <span>316 430 1576</span>
-                </a>
-                <a
-                  href="https://wa.me/573027191972?text=Hola,%20deseo%20comunicarme%20con%20la%20Corporaci%C3%B3n%20Soy%20Salvaguardarte"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-white/90 hover:text-[#25D366] transition-colors py-1.5 px-3 rounded-lg bg-white/5 border border-white/10 hover:border-[#25D366]/40"
-                >
-                  <WhatsAppIcon className="w-3.5 h-3.5 text-[#25D366]" />
-                  <span>302 719 1972</span>
-                </a>
-              </div>
-            </div>
+
 
             <div className="p-3.5 rounded-2xl bg-white/5 border border-white/10 text-[11px] text-[#CDB9C7] leading-relaxed italic">
               "Creemos en la cultura como derecho, memoria compartida y fuerza para construir futuros más diversos, inclusivos y sostenibles."
