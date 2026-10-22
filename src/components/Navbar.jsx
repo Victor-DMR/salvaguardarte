@@ -213,20 +213,20 @@ export default function Navbar() {
               Equipo Humano
             </a>
 
-            {/* 4. Aliados */}
-            <a
-              href="#aliados"
-              className="text-sm xl:text-[15px] font-bold text-[#483944] hover:text-[#7E1160] transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#DE7349] hover:after:w-full after:transition-all after:duration-300"
-            >
-              Aliados
-            </a>
-
-            {/* 5. Objetivos */}
+            {/* 4. Objetivos */}
             <a
               href="#objetivos"
               className="text-sm xl:text-[15px] font-bold text-[#483944] hover:text-[#7E1160] transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#DE7349] hover:after:w-full after:transition-all after:duration-300"
             >
               Objetivos
+            </a>
+
+            {/* 5. Aliados */}
+            <a
+              href="#aliados"
+              className="text-sm xl:text-[15px] font-bold text-[#483944] hover:text-[#7E1160] transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#DE7349] hover:after:w-full after:transition-all after:duration-300"
+            >
+              Aliados
             </a>
 
             {/* 6. Comunidad */}
@@ -347,19 +347,19 @@ export default function Navbar() {
               </a>
 
               <a
-                href="#aliados"
-                onClick={() => setMobileMenuOpen(false)}
-                className="px-3 py-2 rounded-lg font-bold text-sm text-[#483944] hover:bg-[#F4ECE1] hover:text-[#7E1160] transition-colors"
-              >
-                Aliados
-              </a>
-
-              <a
                 href="#objetivos"
                 onClick={() => setMobileMenuOpen(false)}
                 className="px-3 py-2 rounded-lg font-bold text-sm text-[#483944] hover:bg-[#F4ECE1] hover:text-[#7E1160] transition-colors"
               >
                 Objetivos
+              </a>
+
+              <a
+                href="#aliados"
+                onClick={() => setMobileMenuOpen(false)}
+                className="px-3 py-2 rounded-lg font-bold text-sm text-[#483944] hover:bg-[#F4ECE1] hover:text-[#7E1160] transition-colors"
+              >
+                Aliados
               </a>
 
               <a
