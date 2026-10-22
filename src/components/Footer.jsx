@@ -1,12 +1,11 @@
 import React from 'react';
-import { Heart, MapPin, Sparkles, Award, Code2, ExternalLink } from 'lucide-react';
-import { InstagramIcon, FacebookIcon, LinkedinIcon, WhatsAppIcon } from './SocialIcons';
+import { Heart, MapPin, Sparkles, Award } from 'lucide-react';
+import { InstagramIcon, FacebookIcon, WhatsAppIcon } from './SocialIcons';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
   const instagramUrl = "https://www.instagram.com/csalvaguardarte?vrfl=Y2J0cWFnNm00czlk";
   const facebookUrl = "https://www.facebook.com/profile.php?id=61578281295144&mibextid=wwXIfr&rdid=EaJDqiwmh4LySUrJ&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1EgsWtiukh%2F%3Fmibextid%3DwwXIfr#";
-  const linkedinUrl = "https://www.linkedin.com/in/ingeniero-victor-montoya";
 
   return (
     <footer className="bg-[#240C20] text-[#F3E5DC] pt-16 pb-12 border-t-4 border-[#DE7349]">
@@ -150,37 +149,6 @@ export default function Footer() {
             </div>
           </div>
 
-        </div>
-
-        {/* Developer Credit Banner: Victor Montoya Ingeniero de Sistemas */}
-        <div className="my-8 p-5 sm:p-6 rounded-3xl bg-gradient-to-r from-white/5 via-[#7E1160]/20 to-white/5 border border-[#E5A823]/30 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-lg">
-          <div className="flex items-center gap-4 text-center sm:text-left">
-            <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#0A66C2] to-[#004182] text-white flex items-center justify-center shadow-md flex-shrink-0">
-              <Code2 className="w-6 h-6 text-white" />
-            </div>
-            <div>
-              <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#E5A823] block">
-                Arquitectura y Desarrollo Web
-              </span>
-              <h4 className="font-serif-title text-base sm:text-lg font-bold text-white leading-tight">
-                Víctor Montoya
-              </h4>
-              <p className="text-xs text-[#D5BFCE]">
-                Ingeniero de Sistemas
-              </p>
-            </div>
-          </div>
-
-          <a
-            href={linkedinUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#0A66C2] hover:bg-[#084e96] text-white text-xs sm:text-sm font-bold shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5 flex-shrink-0"
-          >
-            <LinkedinIcon className="w-4 h-4" />
-            <span>Ver Perfil en LinkedIn</span>
-            <ExternalLink className="w-3.5 h-3.5 opacity-80" />
-          </a>
         </div>
 
         {/* Bottom Bar */}

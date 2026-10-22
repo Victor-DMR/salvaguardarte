@@ -15,7 +15,6 @@ import {
   Building2
 } from 'lucide-react';
 import { startFolkSoundtrack, stopFolkSoundtrack, isFolkPlaying } from '../utils/audioSynth';
-import { LinkedinIcon } from './SocialIcons';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -377,16 +376,6 @@ export default function Navbar() {
                   className="w-full text-center bg-[#DE7349] text-white py-2.5 rounded-xl font-bold text-xs shadow-sm"
                 >
                   Ir a Redes y Comunidad
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/ingeniero-victor-montoya"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => setMobileMenuOpen(false)}
-                  className="w-full flex items-center justify-center gap-2 bg-[#0A66C2] hover:bg-[#084e96] text-white py-2.5 rounded-xl font-bold text-xs shadow-sm transition-colors"
-                >
-                  <LinkedinIcon className="w-4 h-4" />
-                  <span>Desarrollador (Víctor Montoya)</span>
                 </a>
               </div>
             </nav>
