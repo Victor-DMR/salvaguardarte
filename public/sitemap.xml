@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://soysalvaguardarte.org/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://soysalvaguardarte.org/assets/logo_original.webp</image:loc>
+      <image:title>Logo Oficial Corporación Soy Salvaguardarte</image:title>
+      <image:caption>Corporación Soy Salvaguardarte en Galeras, Sucre - Patrimonio Cultural Vivo</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://soysalvaguardarte.org/assets/caracol_cuadro_vivo.webp</image:loc>
+      <image:title>Cuadros Vivos de Galeras Sucre Patrimonio Inmaterial UNESCO</image:title>
+      <image:caption>Manifestación cultural de Cuadros Vivos en Galeras, Sucre</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://soysalvaguardarte.org/assets/sombrero_vueltiao.webp</image:loc>
+      <image:title>Artesanías y Saberes Ancestrales Sabaneros</image:title>
+      <image:caption>Identidad cultural sabanera y patrimonio artesanal en Sucre, Colombia</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://soysalvaguardarte.org/#naturaleza-proposito</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://soysalvaguardarte.org/#equipo-humano</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://soysalvaguardarte.org/#proyectos-en-accion</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://soysalvaguardarte.org/#objetivos</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soysalvaguardarte.org/#valores</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soysalvaguardarte.org/#patrimonio-custodiado</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://soysalvaguardarte.org/#aliados</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://soysalvaguardarte.org/#comunidad</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>

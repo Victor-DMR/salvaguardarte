@@ -1,0 +1,6 @@
+# Robots.txt - Corporación Soy Salvaguardarte (Galeras, Sucre, Colombia)
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://soysalvaguardarte.org/sitemap.xml

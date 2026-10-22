@@ -27,7 +27,13 @@ export default function Hero() {
           {/* Left Column: Institutional Text & Identity */}
           <div className="lg:col-span-7 text-center lg:text-left space-y-5">
             
-            {/* Main Title */}
+            {/* SEO Location & Heritage Badge */}
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#7E1160]/10 border border-[#7E1160]/20 text-xs font-bold text-[#7E1160] uppercase tracking-wider">
+              <MapPin className="w-3.5 h-3.5 text-[#DE7349]" />
+              <span>Galeras, Sucre · Patrimonio Cultural Inmaterial UNESCO</span>
+            </div>
+
+            {/* Main Title (Single H1 on page for Google SEO) */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-[#2B1B26] leading-[1.12]">
               Corporación{' '}
               <span className="relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-[#7E1160] via-[#C85A32] to-[#E5A823]">
@@ -36,7 +42,7 @@ export default function Hero() {
             </h1>
 
             <p className="text-base sm:text-lg lg:text-xl font-medium text-[#7E1160] leading-snug">
-              Naturaleza jurídica, propósito transformador y compromiso comunitario por el patrimonio vivo de Colombia.
+              Naturaleza jurídica, propósito transformador y salvaguardia del patrimonio vivo de Galeras, Sucre y Colombia.
             </p>
 
             {/* Institutional Essence: Propósito y Ámbito */}
