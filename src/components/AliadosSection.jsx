@@ -5,26 +5,26 @@ const aliadosList = [
   {
     id: 'cuerpos-reconciliacion',
     name: 'Corporación Cuerpos para la Reconciliación',
-    image: '/assets/aliados_fotos/Corporación_cue_pos para la_reconciliación.webp',
-    filename: 'Corporación_cue_pos para la_reconciliación.webp'
+    image: '/assets/aliados_fotos/Corporacion_cue_pos_para_la_reconciliacion.webp',
+    filename: 'Corporacion_cue_pos_para_la_reconciliacion.webp'
   },
   {
     id: 'fundacion-gaimata',
     name: 'Fundación Gaimatá',
-    image: '/assets/aliados_fotos/Fundación_Gaimatá.webp',
-    filename: 'Fundación_Gaimatá.webp'
+    image: '/assets/aliados_fotos/Fundacion_Gaimata.webp',
+    filename: 'Fundacion_Gaimata.webp'
   },
   {
     id: 'fucas-social-cultural',
     name: 'Fundación Social Cultural (FUCAS)',
-    image: '/assets/aliados_fotos/Fundación_social_cultural.webp',
-    filename: 'Fundación_social_cultural.webp'
+    image: '/assets/aliados_fotos/Fundacion_social_cultural.webp',
+    filename: 'Fundacion_social_cultural.webp'
   },
   {
     id: 'institucion-antonio-narino',
     name: 'Institución Educativa Antonio Nariño (INEAN)',
-    image: '/assets/aliados_fotos/Instituto_Educati_a_Antonio_Nariño.webp',
-    filename: 'Instituto_Educati_a_Antonio_Nariño.webp'
+    image: '/assets/aliados_fotos/Instituto_Educati_a_Antonio_Narino.webp',
+    filename: 'Instituto_Educati_a_Antonio_Narino.webp'
   },
   {
     id: 'corporacion-bailadores-tradicionales',
