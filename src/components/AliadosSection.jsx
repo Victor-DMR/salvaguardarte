@@ -37,6 +37,12 @@ const aliadosList = [
     name: 'Nicho de Creadores',
     image: '/assets/aliados_fotos/nicho_de_creadores.webp',
     filename: 'nicho_de_creadores.webp'
+  },
+  {
+    id: 'corporacion-nuevo-sol-naciente',
+    name: 'Corporación Cultural Nuevo Sol Naciente',
+    image: '/assets/aliados_fotos/corpracion_nuevo_naciente.webp',
+    filename: 'corpracion_nuevo_naciente.webp'
   }
 ];
 
@@ -62,12 +68,12 @@ export default function AliadosSection() {
           </h2>
         </div>
 
-        {/* Grid of Allies: 6 Photos / Logos */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6 items-center">
+        {/* Grid of Allies: 7 Photos / Logos */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-4 sm:gap-6 items-center">
           {aliadosList.map((aliado) => (
             <div
               key={aliado.id}
-              className="group bg-white rounded-3xl p-6 sm:p-8 flex flex-col items-center justify-center transition-all duration-300 hover:-translate-y-1.5 shadow-sm hover:shadow-xl border border-[#E5A823]/30 hover:border-[#DE7349]/60 aspect-square"
+              className="group bg-white rounded-3xl p-5 sm:p-6 flex flex-col items-center justify-center transition-all duration-300 hover:-translate-y-1.5 shadow-sm hover:shadow-xl border border-[#E5A823]/30 hover:border-[#DE7349]/60 aspect-square"
             >
               <div className="w-full h-full flex items-center justify-center overflow-hidden">
                 <img

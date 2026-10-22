@@ -103,7 +103,7 @@ export default function ObjetivosSection() {
   const [selectedObjective, setSelectedObjective] = useState(0);
 
   return (
-    <section id="objetivos" className="py-16 sm:py-24 bg-[#FCFAF7] relative overflow-hidden">
+    <section id="objetivos" className="py-16 sm:py-24 bg-[#FCFAF7] relative overflow-hidden border-t border-[#EADFCB]">
       
       {/* Background glow */}
       <div className="absolute top-1/2 left-0 w-80 h-80 bg-[#E5A823]/5 rounded-full blur-3xl pointer-events-none"></div>

@@ -276,7 +276,7 @@ export default function ProyectosEnAccion() {
   });
 
   return (
-    <section id="proyectos-en-accion" className="py-16 sm:py-24 bg-[#FCFAF7] relative overflow-hidden">
+    <section id="proyectos-en-accion" className="py-16 sm:py-24 bg-[#FCFAF7] relative overflow-hidden border-t border-[#EADFCB]">
       
       {/* Decorative ambient background */}
       <div className="absolute top-10 left-1/4 w-96 h-96 bg-[#7E1160]/5 rounded-full blur-3xl pointer-events-none"></div>

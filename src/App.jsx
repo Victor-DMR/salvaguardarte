@@ -58,20 +58,20 @@ export default function App() {
         {/* 3. Equipo Humano & Liderazgo (María Fernanda Severiche & Tatiana Narváez) */}
         <EquipoHumano />
 
-        {/* 4. Proyectos en Acción: Formación, Saberes, Eventos y los 9 Proyectos */}
-        <ProyectosEnAccion />
+        {/* 4. Red de Aliados Estratégicos */}
+        <AliadosSection />
 
         {/* 5. Los 6 Objetivos Estratégicos */}
         <ObjetivosSection />
 
-        {/* 6. Los 8 Valores Institucionales */}
+        {/* 6. Proyectos en Acción: Formación, Saberes, Eventos y los 9 Proyectos */}
+        <ProyectosEnAccion />
+
+        {/* 7. Los 8 Valores Institucionales */}
         <ValoresSection />
 
-        {/* 7. Carrusel de Fotos: Cuadros Vivos y Festival de la Algarroba */}
+        {/* 8. Carrusel de Fotos: Cuadros Vivos y Festival de la Algarroba */}
         <PatrimonioCarrusel />
-
-        {/* 8. Red de Aliados Estratégicos */}
-        <AliadosSection />
 
         {/* 9. Redes Sociales (Instagram & Facebook) y Participación */}
         <SocialCommunity />
